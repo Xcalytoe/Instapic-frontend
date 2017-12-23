@@ -7,7 +7,6 @@ import { TabsPage } from '../pages/tabs/tabs';
 import * as firebase  from 'firebase'
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
-import { FirebaseApp } from '@firebase/app-types';
 
 
 

@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController, ToastController } from 'ionic-angular';
 import * as firebase  from 'firebase';
-import { FirebaseApp } from '@firebase/app-types';
+import { HomePage } from '../home/home';
+import { UserServiceProvider } from '../../providers/user-service/user-service';
+
+
 
 
 
@@ -16,16 +19,44 @@ import { FirebaseApp } from '@firebase/app-types';
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html',
+  providers:[UserServiceProvider,]
 })
 export class LoginPage {
   public email: string;
   public password: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public usersService:UserServiceProvider, public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, public toastCtrl:ToastController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
-  submitLogin(){}
+  submitLogin(){
+    var that = this;
+  let loading = this.loadingCtrl.create({
+    // spinner: 'hide',
+    content: 'Please Wait...'
+  });
+this.usersService.loginUser(this.email,this.password).then(authData=>{
+  setTimeout(() => {
+  this.navCtrl.setRoot(HomePage);
+  }, 3000);
+  loading.dismiss();
+  // this.navCtrl.setRoot(Homepage);
+},error=>{
+  loading.dismiss()
+    setTimeout(() => {
+      loading.dismiss();
+    }, 5000);
+  let toasting = this.toastCtrl.create({
+    message: 'Oops! ' +error,
+    duration:3000,
+    position: 'top',
+  });
+  toasting.present();
+})
+  loading.present();
+
+
+};
 }

@@ -9,14 +9,15 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import{ TakePhotoPage } from '../pages/take-photo/take-photo';
 import { LoginPage } from '../pages/login/login';
+// import { HttpClientModule } from '@angular/http';
 
 
 import { Camera } from '@ionic-native/camera';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import * as firebase  from 'firebase';
-import { FirebaseApp } from '@firebase/app-types';
 import { UserServiceProvider } from '../providers/user-service/user-service';
+import { HttpClientModule } from '@angular/common/http';
 
  // Initialize Firebase
  export const config = {
@@ -40,6 +41,7 @@ firebase.initializeApp(config);
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
