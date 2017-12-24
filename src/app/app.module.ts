@@ -18,6 +18,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import * as firebase  from 'firebase';
 import { UserServiceProvider } from '../providers/user-service/user-service';
 import { HttpClientModule } from '@angular/common/http';
+import { ProfilePage } from '../pages/profile/profile';
+import { SearchPage } from '../pages/search/search';
 
  // Initialize Firebase
  export const config = {
@@ -36,10 +38,12 @@ firebase.initializeApp(config);
     AboutPage,
     ContactPage,
     HomePage,
+    ProfilePage,
     LoginPage,
     TabsPage,
     SignupPage,
     TakePhotoPage,
+    SearchPage,
   ],
   imports: [
     BrowserModule,
@@ -51,11 +55,13 @@ firebase.initializeApp(config);
     MyApp,
     AboutPage,
     ContactPage,
+    ProfilePage,
     HomePage,
     TabsPage,
     LoginPage,
     SignupPage,
     TakePhotoPage,
+    SearchPage,
   ],
   providers: [
     StatusBar,

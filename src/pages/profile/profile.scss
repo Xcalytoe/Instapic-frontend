@@ -1,0 +1,43 @@
+page-profile {
+    #button{
+            text-transform: none;
+        }
+    .background img {
+        padding: 0 !important;
+        margin: 0 !important;
+        position: relative;
+        width: 100%;
+        height: 200px;
+        filter: blur(1px);
+    }
+
+    .background2 img{
+        position: absolute;
+        margin-top: -60px;
+        border-radius:50%;
+        width: 100px; 
+        margin-left: 0;
+        padding: 0;
+        border: 4px solid rgb(240, 93, 93);
+    }
+    .background3{
+    margin-top: -60px;    
+    // z-index: 1;
+    position: relative !important;
+    color: azure;
+    }
+    .background4{
+        margin-top: 10px;
+        background-color: rgba(241, 240, 240, 0.87);
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px rgba(59, 59, 59, 0.1)
+    }
+    .background5{
+        margin-top: 30px; 
+    }
+    .background5 h3{
+        padding: 0;
+        margin: 0; 
+    }
+}
