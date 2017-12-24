@@ -21,7 +21,7 @@ export class MyApp {
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
         // User is signed in.
-        that.rootPage = HomePage;
+        that.rootPage = TabsPage;
         // ...
       } else {
         // User is signed out.

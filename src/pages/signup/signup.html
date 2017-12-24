@@ -17,11 +17,11 @@
     <ion-list>
         <ion-item ion-item-header text-center>
           <h2>InstaPic</h2>
-          <p>Sign up to rate pictures from your friends.</p>
+          <p>Sign up to rate pictures<br> from your friends.</p>
         </ion-item>
          <ion-item text-center>
-            <button ion-button color="danger" id="best">
-                <ion-icon ios="logo-googleplus" md="logo-googleplus" color="light"></ion-icon> &nbsp;Sign in with google
+            <button ion-button block color="danger" id="best">
+                <ion-icon ios="logo-googleplus" md="logo-googleplus" color="light"></ion-icon> &nbsp; Sign in with google
             </button>
          </ion-item>
          <ion-item text-center>
@@ -45,7 +45,7 @@
           <ion-input type="password" [(ngModel)]="password" placeholder="Enter password" required></ion-input>
         </ion-item>
         <ion-buttons>
-          <button ion-button block outline  *ngIf= "email && password">Sign up</button>
+          <button ion-button block outline color="danger"  *ngIf= "email && password" (click)="signUpUser()">Sign up</button>
           <button ion-button block   *ngIf= "!email && !password"> Sign up</button>
         </ion-buttons>
         <p>By signing up, you agree to our <br>

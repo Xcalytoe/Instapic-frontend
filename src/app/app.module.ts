@@ -9,7 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import{ TakePhotoPage } from '../pages/take-photo/take-photo';
 import { LoginPage } from '../pages/login/login';
-// import { HttpClientModule } from '@angular/http';
+import { SignupPage } from '../pages/signup/signup';
 
 
 import { Camera } from '@ionic-native/camera';
@@ -38,6 +38,8 @@ firebase.initializeApp(config);
     HomePage,
     LoginPage,
     TabsPage,
+    SignupPage,
+    TakePhotoPage,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,9 @@ firebase.initializeApp(config);
     ContactPage,
     HomePage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    SignupPage,
+    TakePhotoPage,
   ],
   providers: [
     StatusBar,

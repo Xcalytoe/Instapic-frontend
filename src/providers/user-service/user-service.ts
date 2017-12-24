@@ -18,6 +18,7 @@ public userProfile: any;
     this.fireAuth = firebase.auth();
     this.userProfile = firebase.database().ref('user')
   }
+
   loginUser(email : string ,password: string ): any{
   return this.fireAuth.signInWithEmailAndPassword(email, password)
   // .catch(function(error) {
@@ -26,5 +27,19 @@ public userProfile: any;
   //     var errorMessage = error.message;
   //     // ...
     // });
+  }
+
+  signupUserService(account:{}){
+    return this.fireAuth.createUserWithEmailAndPassword(account['email'],account ['password']).then((newUser)=>{
+  // sign in user
+  this.fireAuth.signInWithEmailAndPassword(account['email'],account ['password']).then((authenticatedUser)=>{
+  // successful login
+    this.userProfile.child(authenticatedUser.uid).set(
+      account
+    );
+  });
+  });
+    
+    
   }
 }

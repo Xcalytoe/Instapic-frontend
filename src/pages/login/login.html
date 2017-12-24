@@ -19,6 +19,9 @@
           <h2>InstaPic</h2>
         </ion-item>
         <ion-item>
+          <button ion-button clear (click)="signUpPage()" end>Sign up</button>
+        </ion-item>
+        <ion-item>
           <!-- <ion-label stacked>Username</ion-label> -->
           <ion-input type="email" value="" [(ngModel)]="email" placeholder="Enter email" required></ion-input>
         </ion-item>
@@ -38,8 +41,8 @@
           <span></span><p>Or</p><span></span>
         </ion-item>
        <ion-item text-center>
-          <button ion-button color="danger" id="best">
-              <ion-icon ios="logo-googleplus" md="logo-googleplus" color="light"></ion-icon> &nbsp;Sign in with google
+          <button ion-button block color="danger" id="best">
+              <ion-icon ios="logo-googleplus" md="logo-googleplus"  color="light"></ion-icon> &nbsp;Sign in with google
           </button>
        </ion-item>
       </ion-list>

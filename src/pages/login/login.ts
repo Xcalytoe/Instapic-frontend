@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController, ToastController } from 'ionic-angular';
 import * as firebase  from 'firebase';
-import { HomePage } from '../home/home';
+import { TabsPage } from '../tabs/tabs';
 import { UserServiceProvider } from '../../providers/user-service/user-service';
+import { SignupPage } from '../signup/signup';
 
 
 
@@ -39,7 +40,7 @@ export class LoginPage {
   });
 this.usersService.loginUser(this.email,this.password).then(authData=>{
   setTimeout(() => {
-  this.navCtrl.setRoot(HomePage);
+  this.navCtrl.setRoot(TabsPage);
   }, 3000);
   loading.dismiss();
   // this.navCtrl.setRoot(Homepage);
@@ -59,4 +60,7 @@ this.usersService.loginUser(this.email,this.password).then(authData=>{
 
 
 };
+signUpPage(){
+  this.navCtrl.push(SignupPage);
+}
 }
