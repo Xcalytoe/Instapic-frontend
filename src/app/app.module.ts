@@ -22,6 +22,7 @@ import { ProfilePage } from '../pages/profile/profile';
 import { SearchPage } from '../pages/search/search';
 import { ImageModalPage } from '../pages/image-modal/image-modal';
 import { ImageModal2Page } from '../pages/image-modal2/image-modal2';
+import { ProgressbarComponent } from '../components/progressbar/progressbar'
 
  // Initialize Firebase
  export const config = {
@@ -44,6 +45,7 @@ firebase.initializeApp(config);
     LoginPage,
     TabsPage,
     SignupPage,
+    ProgressbarComponent,
     TakePhotoPage,
     SearchPage,
     ImageModalPage,
