@@ -34,37 +34,58 @@
          <p class="check">Which is better?</p>
        </ion-col>
      </ion-row>
-     <ion-row>
-      <ion-col col-6 >
+     <ion-row id="bg">
+      <ion-col col-6>
         <!-- <ion-card > -->
-          <img src="images/photo1.jpg" (click)="photo1($event)" >
+          <img src="images/photo1.jpg" (click)="photo1()" >
         <!-- </ion-card> -->
+        <ion-row>
+          <ion-col ion-button clear col-2>
+              <!-- <button ion-button clear col-2> -->
+                <ion-icon ios="ios-thumbs-up" md="md-thumbs-up" id="pad"></ion-icon>
+              <!-- </button> -->
+          </ion-col>
+          <ion-col col-10>
+            <progressbar [progress]= "loadProgress" id="pad" (click)= "progress1()" ></progressbar>
+          </ion-col>
+          </ion-row>
+          <!-- <a href="#"> <ion-icon  ios="ios-text" md="md-text"></ion-icon>&nbsp; Comment</a> -->
       </ion-col>
-      <ion-col col-6 >
+      <ion-col col-6>
         <!-- <ion-card > -->
-          <img src="images/photo2.jpg" (click)="photo2($event)">
+          <img src="images/photo2.jpg" (click)="photo2()">
         <!-- </ion-card> -->
+        <ion-row>
+          <ion-col ion-button clear col-2>
+              <!-- <button ion-button clear col-2> -->
+                <ion-icon ios="ios-thumbs-up" md="md-thumbs-up" id="pad"></ion-icon>
+              <!-- </button> -->
+          </ion-col>
+          <ion-col col-10>
+            <progressbar [progress]= "loadProgress" id="pad" (click)= "progress2()" ></progressbar>
+          </ion-col>
+          </ion-row>
       </ion-col>
     </ion-row>
-    <ion-row>
+    <!-- <ion-row>
       <ion-col ion-button clear col-1>
-          <!-- <button ion-button clear col-2> -->
+          <button ion-button clear col-2>
             <ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon>
-          <!-- </button> -->
+          </button>
       </ion-col>
       <ion-col col-5>
         <progressbar [progress]= "loadProgress"></progressbar>
       </ion-col>
       <ion-col ion-button clear col-1  >
-          <!-- <button ion-button clear col-2> -->
+          <button ion-button clear col-2>
             <ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon>
-          <!-- </button> -->
+          </button>
       </ion-col>
       <ion-col col-5>
           <progressbar [progress]= "loadProgress"></progressbar>
         </ion-col>
-    </ion-row>
-    <ion-row>
+    </ion-row> -->
+    <!-- <ion-row>
       <ion-col>
         <button ion-button clear (click)="comment()" >
           <ion-icon  ios="ios-text" md="md-text"></ion-icon>
@@ -78,20 +99,27 @@
       <ion-col ion-button clear col-2>
         <ion-icon ios="ios-send" md="md-send"></ion-icon>
       </ion-col>
-    </ion-row>
-    <!-- <ion-row>
-      <ion-col col-6>
-          <button ion-item>
-              <ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon>
-              <ion-badge item-end>260k</ion-badge>
-          </button>
-      </ion-col>
-       <ion-col col-6>
-          <button ion-item>
-              <ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon>
-              <ion-badge item-end>26k</ion-badge>
-          </button>
-      </ion-col>
     </ion-row> -->
+    <ion-row>
+      <ion-col>
+        <!-- <button ion-button clear (click)="comment()" >
+          <ion-icon  ios="ios-text" md="md-text"></ion-icon>
+        </button> -->
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-10 id="comment">
+        <h4>Action_guy</h4>
+        <p>I like the pic on the the right but the other one isn't bad though.</p>
+      </ion-col>
+    </ion-row>
+    <ion-row  id="input">
+      <ion-col col-10>
+        <ion-textarea  placeholder="Add a comment"></ion-textarea>
+      </ion-col>
+      <ion-col ion-button clear col-2>
+        <ion-icon ios="ios-send" md="md-send"></ion-icon>
+      </ion-col>
+    </ion-row>
   </ion-grid>
 </ion-content>

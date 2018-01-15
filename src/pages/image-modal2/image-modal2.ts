@@ -13,7 +13,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-image-modal2',
   templateUrl: 'image-modal2.html',
    template:`
-  <img src="images/photo2.jpg">
+   <img src="images/photo1.jpg" >
   `
 })
 export class ImageModal2Page {

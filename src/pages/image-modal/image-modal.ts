@@ -14,7 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-image-modal',
   templateUrl: 'image-modal.html',
   template:`
-  <Img src="images/photo1.jpg">
+  <img src="images/photo1.jpg" >
   `
  
    

@@ -22,7 +22,9 @@ import { ProfilePage } from '../pages/profile/profile';
 import { SearchPage } from '../pages/search/search';
 import { ImageModalPage } from '../pages/image-modal/image-modal';
 import { ImageModal2Page } from '../pages/image-modal2/image-modal2';
-import { ProgressbarComponent } from '../components/progressbar/progressbar'
+import { ProgressbarComponent } from '../components/progressbar/progressbar';
+import { Progress1Page } from '../pages/progress1/progress1';
+import { Progress2Page } from '../pages/progress2/progress2';
 
  // Initialize Firebase
  export const config = {
@@ -50,6 +52,8 @@ firebase.initializeApp(config);
     SearchPage,
     ImageModalPage,
     ImageModal2Page,
+    Progress1Page,
+    Progress2Page,
   ],
   imports: [
     BrowserModule,
@@ -70,6 +74,8 @@ firebase.initializeApp(config);
     TakePhotoPage,
     SearchPage,
     ImageModal2Page,
+    Progress1Page,
+    Progress2Page,
   ],
   providers: [
     StatusBar,
