@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import {Camera} from '@ionic-native/camera';
 import { MyApp } from './app.component';
-
+import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, CameraPreviewDimensions } from '@ionic-native/camera-preview';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
@@ -25,6 +25,8 @@ import { ImageModal2Page } from '../pages/image-modal2/image-modal2';
 import { ProgressbarComponent } from '../components/progressbar/progressbar';
 import { Progress1Page } from '../pages/progress1/progress1';
 import { Progress2Page } from '../pages/progress2/progress2';
+import { OpenCameraPage } from '../pages/open-camera/open-camera';
+import { OpenGalleryPage } from '../pages/open-gallery/open-gallery';
 
  // Initialize Firebase
  export const config = {
@@ -54,6 +56,8 @@ firebase.initializeApp(config);
     ImageModal2Page,
     Progress1Page,
     Progress2Page,
+    OpenCameraPage,
+    OpenGalleryPage,
   ],
   imports: [
     BrowserModule,
@@ -76,10 +80,13 @@ firebase.initializeApp(config);
     ImageModal2Page,
     Progress1Page,
     Progress2Page,
+    OpenCameraPage,
+    OpenGalleryPage,
   ],
   providers: [
     StatusBar,
     Camera,
+    CameraPreview,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserServiceProvider

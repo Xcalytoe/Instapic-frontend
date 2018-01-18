@@ -19,12 +19,20 @@
 };
 .progress1 .popover-content{
     width: 100px;
-    margin-left: 1% !important;
+    // position: relative;
+    // margin-left: 1% !important;
+    left: 5% !important;
 };
 .progress2 .popover-content{
     width: 100px;
-    margin-right: 1% !important;
-    
+    // right: 50px;
+    // margin-right: 1% !important;
+    // top: 50%;
+    // left: 70% !important;$popover-md-width: 90%;
+    left: 70% !important;
 };
+html, body, ion-app, ion-content, ion-page, .nav-decor {
+    background-color: transparent !important;
+  }
 
     

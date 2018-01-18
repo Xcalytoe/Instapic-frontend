@@ -1,6 +1,6 @@
 {
   "name": "InstaPic",
-  "app_id": "",
+  "app_id": "c72f33ab",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
