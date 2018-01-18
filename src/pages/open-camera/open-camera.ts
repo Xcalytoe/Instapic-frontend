@@ -33,8 +33,7 @@ export class OpenCameraPage {
       targetHeight: window.screen.height,
       destinationType: this.camera.DestinationType.DATA_URL,
       encodingType: this.camera.EncodingType.JPEG,
-      // mediaType: this.camera.MediaType.PICTURE,
-      mediaType:this.camera.PictureSourceType.PHOTOLIBRARY
+      mediaType: this.camera.MediaType.PICTURE,
     }
     
     this.camera.getPicture(options).then((imageData) => {
