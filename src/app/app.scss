@@ -34,5 +34,11 @@
 html, body, ion-app, ion-content, ion-page, .nav-decor {
     background-color: transparent !important;
   }
-
+// settingsPopover
+.SettingsPop .popover-content{
+    width: 150px;
+    margin-top:-32vh;
+    margin-left:20vw;
+    border-radius:0 7px;
+}
     

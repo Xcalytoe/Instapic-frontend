@@ -6,6 +6,7 @@ import { HomePage } from '../home/home';
 import { TakePhotoPage } from '../take-photo/take-photo';
 import { SearchPage } from '../search/search';
 import { ProfilePage } from '../profile/profile';
+import { NavController } from 'ionic-angular/navigation/nav-controller';
 // import { HomePage } from '../home/home';
 // import { HomePage } from '../home/home';
 
@@ -20,7 +21,10 @@ export class TabsPage {
   tab4Root = TakePhotoPage;
   tab5Root = SearchPage;
 
-  constructor() {
+  constructor(public navCtrl:NavController) {
 
+  }
+  presentActionSheet(){
+    this.navCtrl.setRoot(TakePhotoPage);
   }
 }

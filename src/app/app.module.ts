@@ -27,6 +27,8 @@ import { Progress1Page } from '../pages/progress1/progress1';
 import { Progress2Page } from '../pages/progress2/progress2';
 import { OpenCameraPage } from '../pages/open-camera/open-camera';
 import { OpenGalleryPage } from '../pages/open-gallery/open-gallery';
+import { SettingsPopoverPage } from '../pages/settings-popover/settings-popover';
+import { EditProfilePage } from '../pages/edit-profile/edit-profile';
 
  // Initialize Firebase
  export const config = {
@@ -58,6 +60,8 @@ firebase.initializeApp(config);
     Progress2Page,
     OpenCameraPage,
     OpenGalleryPage,
+    SettingsPopoverPage,
+    EditProfilePage
   ],
   imports: [
     BrowserModule,
@@ -82,6 +86,8 @@ firebase.initializeApp(config);
     Progress2Page,
     OpenCameraPage,
     OpenGalleryPage,
+    SettingsPopoverPage,
+    EditProfilePage
   ],
   providers: [
     StatusBar,

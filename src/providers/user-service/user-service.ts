@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { firebase } from '@firebase/app';
 
+
 /*
   Generated class for the UserServiceProvider provider.
 
@@ -39,7 +40,8 @@ public userProfile: any;
     );
   });
   });
-    
-    
+  }
+  LogoutUser(){
+    return this.fireAuth.signOut();
   }
 }
