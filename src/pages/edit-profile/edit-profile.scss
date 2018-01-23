@@ -1,5 +1,44 @@
 page-edit-profile {
-#header{
-    background: linear-gradient(to right,#fb077d,#ee82b6) !important;
+    .settings-title{
+       color: rgba(0, 0, 0, 0.781);
+       font-size: 12px;
+       margin-top:5vh;
+    }
+    ion-content{
+        background: white !important;
+    }
+    #button1{
+        text-transform: none;
+        left: 75%;
+        padding: 5px 10px;
+    }
+    #button{
+        text-transform: none;
+    }
+    #image{
+        margin-top:5vh;
+        position: relative;
+    }
+    #icon{
+        position: absolute;
+    }
+    #icon button{
+        // position: absolute;
+        margin-left: 50vw;
+        margin-top: -5vh;
+        width: 15vw;
+        color: rgba(238, 228, 228, 0.938);
+        background: rgba(224, 79, 152, 0.938);
+        border-radius: 20px;
+        padding: 8px;
+    }
+    #image img{
+        border-radius: 50%;
+        width: 40vw;
+    }
+ion-header{
+    .toolbar-background {
+        background: linear-gradient(right to, $header-first-color , $header-last-color ) !important;
+    }
 }
 }

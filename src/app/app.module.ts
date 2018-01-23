@@ -61,7 +61,7 @@ firebase.initializeApp(config);
     OpenCameraPage,
     OpenGalleryPage,
     SettingsPopoverPage,
-    EditProfilePage
+    EditProfilePage,
   ],
   imports: [
     BrowserModule,
@@ -87,7 +87,7 @@ firebase.initializeApp(config);
     OpenCameraPage,
     OpenGalleryPage,
     SettingsPopoverPage,
-    EditProfilePage
+    EditProfilePage,
   ],
   providers: [
     StatusBar,

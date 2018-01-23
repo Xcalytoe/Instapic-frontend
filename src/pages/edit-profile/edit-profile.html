@@ -4,32 +4,59 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header style=" background: linear-gradient(to right,#fb077d,#ee82b6);">
+<ion-header id=" header" no-border>
 
   <ion-navbar>
     <ion-title>Edit profile</ion-title>
   </ion-navbar>
 
-</ion-header>
+</ion-header> 
 
 
 <ion-content>
-  <ion-list>
-    <ion-item>
-      <ion-label stacked>Email</ion-label>
-      <ion-input type="email" value="" [(ngModel)]="email" value="xcalyto@gmail.com" required></ion-input>
-    </ion-item>
-    <ion-item>
-        <ion-label stacked>Fullname</ion-label>
-        <ion-input type="text" value="" [(ngModel)]="fullname" value="Ezejiofor Cosmas Amaechi" required></ion-input>
-      </ion-item>
-      <ion-item>
-          <ion-label stacked>Username</ion-label>
-          <ion-input type="text" value="" [(ngModel)]="username" value="Xcalyto" required></ion-input>
-        </ion-item>
-  
-    <ion-item>
-      <button ion-button>Update</button>
-    </ion-item>
-  </ion-list>
+  <div id="image" text-center>
+    <img src="images/first3.jpg" alt="">
+    <div id="icon">
+      <button ion-button clear (click)="LoadOptions()" >
+        <ion-icon ios="ios-camera" md="md-camera"></ion-icon>
+      </button>
+    </div>
+  </div>
+  <div class="settings-title" text-center>
+    <p>Basic Settings</p>
+  </div>
+  <ion-card>
+    <ion-card-content>
+        <ion-list>
+        <ion-item>
+            <ion-label stacked>Email</ion-label>
+            <ion-input type="email" [(ngModel)]="email" value="xcalyto@gmail.com" required></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label stacked>Fullname</ion-label>
+              <ion-input type="text" [(ngModel)]="fullname" value="Ezejiofor Cosmas Amaechi" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label stacked>Username</ion-label>
+              <ion-input type="text" [(ngModel)]="username" value="Xcalyto" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label stacked>Location</ion-label>
+              <ion-input type="text"  [(ngModel)]="location" value="Lagos" required></ion-input>
+            </ion-item>
+        
+          <ion-item end>
+            <button id="button1" ion-button>Update</button>
+          </ion-item>
+        </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <div class="settings-title" text-center>
+      <p>Password Settings</p>
+    </div>
+    <ion-card>
+      <ion-card-content text-center>
+        <button id="button" ion-button color="light" (click)="updatePass()" >Change Password</button>
+      </ion-card-content>
+    </ion-card>
 </ion-content>

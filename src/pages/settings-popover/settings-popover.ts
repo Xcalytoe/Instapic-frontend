@@ -14,10 +14,10 @@ import { EditProfilePage } from '../edit-profile/edit-profile';
 @Component({
   selector: 'page-settings-popover',
   templateUrl: 'settings-popover.html',
-  template: `<ion-content>
-    <button ion-item (click)="editProfile()"><ion-icon color="primary" ios="ios-create" md="md-create"></ion-icon>&nbsp;  Edit Profile</button>
-    <button ion-item (click)="logoutUser()"><ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>&nbsp;  Logout</button>
-</ion-content>`,
+//   template: `<ion-content>
+//     <button ion-item (click)="EditProfile()" ><ion-icon color="primary" ios="ios-create" md="md-create"></ion-icon>&nbsp;  Edit Profile</button>
+//     <button ion-item (click)="logoutUser()"><ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>&nbsp;  Logout</button>
+// </ion-content>`,
 providers:[ UserServiceProvider ],
 })
 export class SettingsPopoverPage {
@@ -33,7 +33,7 @@ export class SettingsPopoverPage {
       this.navCtrl.setRoot(LoginPage);
     });
   }
-  editProfile(){
-    this.navCtrl.setRoot(EditProfilePage);
+  EditProfile(){
+    this.navCtrl.push(EditProfilePage);
   }
 }

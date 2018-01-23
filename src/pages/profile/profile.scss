@@ -2,21 +2,32 @@ page-profile {
     ion-content{
         background: rgba(0, 0, 0, 0.09)!important;
     }
-    .background img {
+    .background img{
         padding: 0 !important;
         margin: 0 !important;
+        margin-top: -7vh !important;
         position: relative;
-        width: 100%;
+        width: 100% !important;
+    //    display: flex;
+        
         filter: drop-shadow(2px 2px 8px black);
         // height: 200px;
         // filter: blur(1px);
         // transform: rotate(-10deg);
     }
-    .setting {
+    // .setting{
+    //     position: absolute;
+    // }
+    #nav .toolbar-background{
+        // background:  linear-gradient(#fb003b,#fa2457, #fa3765, #fa2457, #fb003b) !important;
+        background:  linear-gradient(#fb003b) !important;
+        box-shadow: 0 !important;
+      margin:0;
+    }
+    #setting{
         color:white;
         margin-left:83vw ;
-        margin-top: -37vh;
-        position: absolute;
+        z-index: 1 !important;
     }
 
     .background2 img{
@@ -29,10 +40,11 @@ page-profile {
         margin-left: 28%;
         padding: 0;
         //  linear-gradient(rgba(8, 8, 8, 0.75), rgba(252, 252, 252, 0.89));
-        border: 15px solid rgba(0, 0, 0, 0.87);  
+        border: 15px solid #fb003b;
+        // border: 15px solid rgba(251, 33, 0, 0.644);  
         // border-image-source: linear-gradient( rgb(44, 51, 44), black);
         // border-image-slice: 1;
-        box-shadow: 1px 1px 3px 6px rgba(0, 0, 0, 0.39);
+        // box-shadow: 1px 1px 3px 6px rgba(0, 0, 0, 0.39);
     }
     .background3{
     // z-index: 1;

@@ -4,24 +4,29 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<!-- <ion-header>
+<ion-header>
 
-  <ion-navbar>
-    <ion-title>profile</ion-title>
+  <ion-navbar id="nav">
+    <button ion-button clear id="setting" (click)="settingsPop()" >
+      <ion-icon  ios="ios-settings" md="md-settings"></ion-icon>
+    </button>
   </ion-navbar>
 
-</ion-header> -->
+</ion-header>
 
 
 <ion-content >
   <!-- <button ion-button clear color="danger" id="button">Edit profile</button> -->
-  <div class="background" col-12>
+  <div class="background" col-auto>
     <img src="images/image3.png" alt="">
-    <button ion-button clear class="setting" (click)="settingsPop()" >
-      <ion-icon id="setting" ios="ios-settings" md="md-settings"></ion-icon>
-    </button>
+    <!-- <div class="setting">
+      <button ion-button clear id="setting" (click)="settingsPop()" >
+          <ion-icon  ios="ios-settings" md="md-settings"></ion-icon>
+      </button>
+    </div> -->
+    
   </div>
- 
+  
   <div class="background2">
     <img src="images/first3.jpg" alt="">
   </div>
@@ -31,8 +36,8 @@
   </div>
   <ion-grid class="background4">
     <ion-row text-center>
-      <ion-col col-6 id="right"><a href="#"><span id="post-no">200</span><br><span id="post">posts</span></a></ion-col>
-      <ion-col col-6 id="left" ><a href="#"><span id="frnds-no">3300</span><br><span id="frnds">Friends</span></a></ion-col>
+      <ion-col col-6 id="right"><a href="#first"><span id="post-no">200</span><br><span id="post">posts</span></a></ion-col>
+      <ion-col col-6 id="left" ><a  ion-button clear ><span id="frnds-no">3300</span><br><span id="frnds">Friends</span></a></ion-col>
     </ion-row>
    
   </ion-grid>
@@ -42,7 +47,7 @@
       </ion-row>
       <button ion-item>
         <ion-row>
-          <ion-col col-6>
+          <ion-col id= "first" col-6>
             <img src="images/1.jpg" alt="">
           </ion-col> 
           <ion-col col-6>
