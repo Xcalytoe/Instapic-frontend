@@ -2,6 +2,10 @@ page-profile {
     ion-content{
         background: rgba(0, 0, 0, 0.09)!important;
     }
+    .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after,
+    .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before{
+        background-image: none !important;
+    }
     .background img{
         padding: 0 !important;
         margin: 0 !important;
@@ -82,27 +86,49 @@ page-profile {
         color:rgb(32, 1, 1);
     }
     #post-no{
-        font-size:4vw;
+        font-size:12px;
         font-weight: 500;
+        display: block;
+        letter-spacing: 0.1em;
+        
+        // margin-bottom:20px !important;
     }
     #post{
         font-family:  Helvetica,Arial, sans-serif;
-        font-size:4.5vw;
+        font-size:14px;
         font-weight: bold;
-        letter-spacing: 0.3vw;
-        color:rgb(19, 41, 102);
+        letter-spacing: 0.1em;
+        text-transform:none;
+        text-transform:none;
+        color:#720720;
+        padding: 0 !important;
+        margin: 0 !important;
     }
     #frnds-no{
-        font-size:4vw;
+        font-size:12px;
         font-weight: 500;
+        display: block;
+        letter-spacing: 0.1em;
+        
 
     }
     #frnds{
         font-family:  Helvetica,Arial, sans-serif;
-        font-size:4.5vw;
+        font-size:14px;
         font-weight: bold;
-        letter-spacing: 0.3vw;
-        color:rgb(19, 41, 102);
+        text-transform:none;
+        letter-spacing: 0.1em;
+        color:#720720;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    #left p{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    #right  p{
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     .background5{

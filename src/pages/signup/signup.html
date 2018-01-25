@@ -4,53 +4,65 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<!-- <ion-header>
 
   <ion-navbar>
     <ion-title>signup</ion-title>
   </ion-navbar>
 
-</ion-header>
+</ion-header> -->
 
 
-<ion-content padding>
-    <ion-list>
-        <ion-item ion-item-header text-center>
-          <h2>InstaPic</h2>
-          <p>Sign up to rate pictures<br> from your friends.</p>
+<ion-content padding >
+    <ion-list text-center>
+        <ion-item ion-item-header text-center id="logo">
+          <h2 id="logo_head">InstaPic</h2>
+          <p id="logo_p">Sign up to rate pictures<br> from your friends.</p>
         </ion-item>
-         <ion-item text-center>
+         <!-- <ion-item text-center>
             <button ion-button block color="danger" id="best">
                 <ion-icon ios="logo-googleplus" md="logo-googleplus" color="light"></ion-icon> &nbsp; Sign in with google
             </button>
-         </ion-item>
-         <ion-item text-center>
+         </ion-item> -->
+         <!-- <ion-item text-center>
             <span></span><p>Or</p><span></span>
-          </ion-item>
-        <ion-item>
-          <!-- <ion-label stacked>Username</ion-label> -->
-          <ion-input type="email" value="" [(ngModel)]="email" placeholder="Enter email" required></ion-input>
-        </ion-item>
-        <ion-item>
+          </ion-item> -->
+           <ion-item id="fullname">
             <!-- <ion-label stacked>Username</ion-label> -->
             <ion-input type="text" value="" [(ngModel)]="fullname" placeholder="Enter fullname" required></ion-input>
           </ion-item>
-          <ion-item>
+       
+       
+          <ion-item id="username">
               <!-- <ion-label stacked>Username</ion-label> -->
               <ion-input type="text" value="" [(ngModel)]="username" placeholder="Enter username" required></ion-input>
             </ion-item>
+            <ion-item id="email">
+          <!-- <ion-label stacked>Username</ion-label> -->
+              <ion-input type="email" value="" [(ngModel)]="email" placeholder="Enter email" required></ion-input>
+            </ion-item>
+            <ion-item id="location">
+              <!-- <ion-label stacked>Username</ion-label> -->
+              <ion-input type="text" value="" [(ngModel)]="location" placeholder="Enter location" ></ion-input>
+            </ion-item>
       
-        <ion-item>
+        <ion-item id="password">
           <!-- <ion-label stacked>Password</ion-label> -->
           <ion-input type="password" [(ngModel)]="password" placeholder="Enter password" required></ion-input>
         </ion-item>
-        <ion-buttons>
-          <button ion-button block outline color="danger"  *ngIf= "email && password" (click)="signUpUser()">Sign up</button>
-          <button ion-button block   *ngIf= "!email && !password"> Sign up</button>
-        </ion-buttons>
-        <p>By signing up, you agree to our <br>
-          <strong>Terms & Privacy Policy.</strong>
-        </p>
+        <ion-buttons offset-7 col-5>
+            <button ion-button block outline color="btn1" id="btn" (click)="signUpUser()" *ngIf= "email && password && fullname && username">Sign up</button>
+            <button ion-button block id="btn1" color="btn1" *ngIf= "!email && !password "> Sign up</button>
+          </ion-buttons>
+        <div id="member">
+          <p><span id="span">Already have account?</span> <span id="login" style="padding-left:10px;" ion-button clear (click)="loginPage()" > &nbsp; &nbsp; Login.</span></p>
+        </div>
+        <div>
+            <p>By signing up, you agree to our <br>
+              <strong style="padding:10px;">Terms & Privacy Policy.</strong>
+            </p>
+        </div>
       </ion-list>
 
 </ion-content>
+

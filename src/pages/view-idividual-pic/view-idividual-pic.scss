@@ -1,4 +1,4 @@
-page-home {
+page-view-idividual-pic {
     .image img{
         border-radius:50%;
         width: 40px; 
@@ -45,21 +45,4 @@ page-home {
         margin-left: 6px; 
         color: rgb(59, 58, 58);
     }
-    #button{
-        color: rgb(255, 255, 255) !important;
-        text-transform: none !important;
-        font-weight: 500;
-        font-size: 16px;
-        letter-spacing: 0.05em
-        
-    }
-    #userName{
-        text-transform:none; 
-        padding:0; 
-        margin:0;
-        color: rgb(36, 35, 35);
-        font-weight: 500;
-        font-style: normal;
-    }
-   
 }

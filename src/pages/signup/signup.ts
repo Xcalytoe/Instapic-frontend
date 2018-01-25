@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams, ToastController, LoadingController
 import * as firebase  from 'firebase';
 import { TabsPage } from '../tabs/tabs';
 import { UserServiceProvider } from '../../providers/user-service/user-service';
+import { LoginPage } from '../login/login';
 
 /**
  * Generated class for the SignupPage page.
@@ -61,5 +62,7 @@ export class SignupPage {
       toasting.present();
     });
     }
-
+    loginPage(){
+      this.navCtrl.setRoot(LoginPage);
+    }
 }

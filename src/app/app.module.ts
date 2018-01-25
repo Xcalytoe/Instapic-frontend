@@ -29,6 +29,7 @@ import { OpenCameraPage } from '../pages/open-camera/open-camera';
 import { OpenGalleryPage } from '../pages/open-gallery/open-gallery';
 import { SettingsPopoverPage } from '../pages/settings-popover/settings-popover';
 import { EditProfilePage } from '../pages/edit-profile/edit-profile';
+import { FriendsPage } from '../pages/friends/friends';
 
  // Initialize Firebase
  export const config = {
@@ -62,6 +63,7 @@ firebase.initializeApp(config);
     OpenGalleryPage,
     SettingsPopoverPage,
     EditProfilePage,
+    FriendsPage,
   ],
   imports: [
     BrowserModule,
@@ -88,6 +90,7 @@ firebase.initializeApp(config);
     OpenGalleryPage,
     SettingsPopoverPage,
     EditProfilePage,
+    FriendsPage,
   ],
   providers: [
     StatusBar,

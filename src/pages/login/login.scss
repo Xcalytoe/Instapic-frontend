@@ -1,4 +1,96 @@
 page-login {
-    #best{text-transform: none;}
+    #imageBg img{
+        position: relative !important;
+        width: 100% !important;
+    }
+    #logo {
+        margin-top:-100vh !important;
+        position: absolute;
+        /* Firefox */
+        width: -moz-calc(100% - 18px);
+        /* WebKit */
+        width: -webkit-calc(100% - 18px);
+        /* Opera */
+        width: -o-calc(100% - 18px);
+        /* Standard */
+        width: calc(100% - 18px);
+    }
+    #logo #logo1{
+        font-weight: 700;
+        font-size: 18px;
+        color: #da0436;
+        // color: #720720;
+    }
+    #body{
+        position: relative !important;
+        margin-top:-93vh !important;
+        background: none !important;
+    }
+    #item{
+        
+        border-radius: 50px !important;
+        margin: 20px !important;
+        margin-top: 8vh !important;
+        border: none !important;
+        box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2) !important;
+        width: 90vw !important;
+    }
+    #item1{
+        border-radius: 50px !important;
+        margin: 20px !important;
+        border: none !important;
+        box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2) !important;
+        width: 80vw !important;
+    }
+    #item input{
+        border:none !important;
+    }
+    // login button
+    #btn{
+        text-transform: none;
+        text-transform: none;
+        border-radius: 50px !important;
+        margin: 20px !important;
+        // border: none !important;
+        box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2) !important;
+        font-weight: 600;
+        font-size: 16px;
+        width: 60vw !important;
+    }
+    #btn1{
+        text-transform: none;
+        border-radius: 50px !important;
+        margin: 20px !important;
+        // border: none !important;
+        box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2) !important;
+        color: #da0436 !important;
+        font-weight: 600;
+        font-size: 16px;
+        width: 60vw !important;
+    }
+    // signup button
+    #signup #bttn{
+        text-transform: none;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        background: rgba(251, 0, 59, 0.9);
+    }
+    // forgot password section
+    #forgotPass{
+        margin-top: 5vh;
+    }
+    
+    #forgotId{
+        text-transform: none;
+        padding: 0 !important;
+        margin:  0 !important;
+        color: rgb(251, 0, 59);
+    }
 
-}
+    #forgotPass #span{
+        margin-top:5px !important;
+        padding-top:5px !important;
+        color:white;
+    }
+} 

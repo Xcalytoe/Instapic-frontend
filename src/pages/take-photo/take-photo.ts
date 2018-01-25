@@ -25,6 +25,7 @@ public base64Image : string;
      private camera : Camera, private alertCtrl : AlertController,
     //   private cameraPreview: CameraPreview
     public actionSheetCtrl: ActionSheetController) {
+      this.presentActionSheet()
         
   }
 
@@ -33,7 +34,7 @@ public base64Image : string;
     // this.takePhoto();
   //  this.openCamera()
   // this.takeShot();
-  this.presentActionSheet()
+  
   }
   
   presentActionSheet() {

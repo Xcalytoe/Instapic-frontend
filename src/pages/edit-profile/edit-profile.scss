@@ -1,4 +1,10 @@
 page-edit-profile {
+    .toolbar-title{
+        color:white !important;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.05em
+    }
     .settings-title{
        color: rgba(0, 0, 0, 0.781);
        font-size: 12px;
@@ -29,6 +35,7 @@ page-edit-profile {
         width: 15vw;
         color: rgba(238, 228, 228, 0.938);
         background: rgba(224, 79, 152, 0.938);
+        background: #fa3765;
         border-radius: 20px;
         padding: 8px;
     }

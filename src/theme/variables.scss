@@ -39,7 +39,11 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  comp:       #fb00b8,
+  btn:          #fb2100,
+  btn1:       #fb003b,
+  btn2:        #720720,
 );
 // $popover-md-width: 90%;
 // $popover-ios-width: 90%;
@@ -48,6 +52,20 @@ $colors: (
 
 $header-first-color: #fb077d;
 $header-last-color: #ee82b6;
+
+$toolbar-md-button-color: white;
+// searchbar
+$searchbar-md-input-clear-icon-color: #fb2100;
+
+// Tabs
+$tabs-ios-tab-icon-color-active:#720720;
+$tabs-ios-tab-icon-color:#fb003b;
+$tabs-ios-tab-color-inactive:#fb003b;
+$tabs-md-tab-icon-color-active:#720720;
+$tabs-md-tab-icon-color: #fb003b;
+$tabs-md-tab-color-inactive: #fb003b;
+$tabs-md-tab-color-active: #720720;
+$tabs-ios-tab-color-active: #720720;
 
 // App iOS Variables
 // --------------------------------------------------

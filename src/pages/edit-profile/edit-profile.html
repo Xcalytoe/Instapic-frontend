@@ -7,7 +7,7 @@
 <ion-header id=" header" no-border>
 
   <ion-navbar>
-    <ion-title>Edit profile</ion-title>
+    <ion-title text-center id="btn">Edit profile</ion-title>
   </ion-navbar>
 
 </ion-header> 
@@ -46,7 +46,7 @@
             </ion-item>
         
           <ion-item end>
-            <button id="button1" ion-button>Update</button>
+            <button id="button1" ion-button color="btn">Update</button>
           </ion-item>
         </ion-list>
     </ion-card-content>
@@ -56,7 +56,7 @@
     </div>
     <ion-card>
       <ion-card-content text-center>
-        <button id="button" ion-button color="light" (click)="updatePass()" >Change Password</button>
+        <button id="button" ion-button color="btn1" (click)="updatePass()" >Change Password</button>
       </ion-card-content>
     </ion-card>
 </ion-content>

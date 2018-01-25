@@ -36,14 +36,14 @@
   </div>
   <ion-grid class="background4">
     <ion-row text-center>
-      <ion-col col-6 id="right"><a href="#first"><span id="post-no">200</span><br><span id="post">posts</span></a></ion-col>
-      <ion-col col-6 id="left" ><a  ion-button clear ><span id="frnds-no">3300</span><br><span id="frnds">Friends</span></a></ion-col>
+      <ion-col col-6 id="right"><p><span id="post-no">200</span><span id="post" ion-button clear color="btn2">Posts</span></p></ion-col>
+      <ion-col col-6 id="left" ><p><span id="frnds-no">3300</span><span id="frnds" ion-button clear color="btn2" (click)="loadFriends()" >Friends</span></p></ion-col>
     </ion-row>
    
   </ion-grid>
   <ion-grid class="background5">
       <ion-row text-center>
-        <ion-col col-12><h3>Posts</h3></ion-col>
+        <ion-col col-12><h3 color="btn2">Posts</h3></ion-col>
       </ion-row>
       <button ion-item>
         <ion-row>

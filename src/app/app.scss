@@ -41,9 +41,14 @@ html, body, ion-app, ion-content, ion-page, .nav-decor {
     margin-left:20vw;
     border-radius:0 7px;
 }
-// .toolbar-background{
-//     background:  linear-gradient(#fb003b,#fa2457, #fa3765, #fa2457, #fb003b) !important;
-//     margin:0;
+.toolbar-background{
+    background:  linear-gradient(#fb003b,#fa2457, #fa3765, #fa2457, #fb003b) !important;
+    margin:0;
+    
+  }
+ 
+//   .toolbar-title{
+//       color:white !important;
 //   }
 // edit profile action sheet
 .actionsheet .action-sheet-title, {
@@ -53,5 +58,14 @@ html, body, ion-app, ion-content, ion-page, .nav-decor {
 
 justify-content: center;
 }
-
-    
+// // popover friend's list
+    .friendsPop .popover-content{
+        width: 80vw !important;
+        text-align: center !important;
+    }
+    .friendsPop .popover-content #button{
+        text-transform: none;
+        padding-top: 1px !important;
+        font-weight: 500 !important;
+        font-size: 14px !important;
+    }

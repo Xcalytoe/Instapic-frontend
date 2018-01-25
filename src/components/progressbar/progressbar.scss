@@ -15,7 +15,10 @@ progressbar {
         overflow: hidden;
         padding: 0;
         border-radius: 20px;
-        background-color: map-get($colors, primary);
+        // background-color: map-get($colors, comp);
+        background: #fd492def;
+        background: #fb003b;
+        // background: #fb00b8;
     }
  
 }

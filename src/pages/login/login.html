@@ -13,39 +13,46 @@
 </ion-header> -->
 
 
-<ion-content padding>
-    <ion-list>
-        <ion-item ion-item-header text-center>
-          <h2>InstaPic</h2>
-        </ion-item>
-        <ion-item>
-          <button ion-button clear (click)="signUpPage()" end>Sign up</button>
-        </ion-item>
-        <ion-item>
-          <!-- <ion-label stacked>Username</ion-label> -->
-          <ion-input type="email" value="" [(ngModel)]="email" placeholder="Enter email" required></ion-input>
-        </ion-item>
+<ion-content>
+  <div id="imageBg">
+    <img src="images/login.png" alt="">
+  </div>
+
+  <div id="logo" text-center>
+    <span id="logo1">InstaPic</span>
+  </div>
+  <div id="body">
+    <div id="signup">
+      <button id="bttn" ion-button clear (click)="signUpPage()" end>Sign up</button>
+    </div>
+    <ion-list text-center>
       
-        <ion-item>
-          <!-- <ion-label stacked>Password</ion-label> -->
-          <ion-input type="password" [(ngModel)]="password" placeholder="Enter password" required></ion-input>
-        </ion-item>
-          <ion-buttons>
-            <button ion-button block outline (click)="submitLogin()" *ngIf= "email && password">Login</button>
-            <button ion-button block   *ngIf= "!email && !password"> Login</button>
-          </ion-buttons>
-        <ion-item>
-          <p>Forgot password? <a href="#">Get help signing in.</a></p>
-        </ion-item>
-        <ion-item text-center>
-          <span></span><p>Or</p><span></span>
-        </ion-item>
-       <ion-item text-center>
-          <button ion-button block color="danger" id="best">
-              <ion-icon ios="logo-googleplus" md="logo-googleplus"  color="light"></ion-icon> &nbsp;Sign in with google
-          </button>
-       </ion-item>
-      </ion-list>
+      <ion-item id="item">
+        <!-- <ion-label stacked>Username</ion-label> -->
+        <ion-input type="email" value="" [(ngModel)]="email" placeholder="Enter email" required></ion-input>
+      </ion-item>
     
+      <ion-item id="item1">
+        <!-- <ion-label stacked>Password</ion-label> -->
+        <ion-input type="password" [(ngModel)]="password" placeholder="Enter password" required></ion-input>
+      </ion-item>
+        <ion-buttons>
+          <button ion-button block outline color="light" id="btn" (click)="submitLogin()" *ngIf= "email && password">Login</button>
+          <button ion-button block id="btn1" color="light" *ngIf= "!email && !password"> Login</button>
+        </ion-buttons>
+      <div id="forgotPass">
+        <p style="margin-left:15vw;"><span id="span">Forgot password?</span> <span id="forgotId" style="padding-left:10px;" ion-button clear (click)="forgotPassword()" > &nbsp; &nbsp; Get help signing in.</span></p>
+      </div>
+      <!-- <ion-item text-center>
+        <span></span><p>Or</p><span></span>
+      </ion-item>
+     <ion-item text-center>
+        <button ion-button block color="danger" id="best">
+            <ion-icon ios="logo-googleplus" md="logo-googleplus"  color="light"></ion-icon> &nbsp;Sign in with google
+        </button>
+     </ion-item> -->
+    </ion-list>
+  
+   </div>
 
 </ion-content>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,PopoverController } from 'ionic-angular';
 import { SettingsPopoverPage } from '../settings-popover/settings-popover'
+import { FriendsPage } from '../friends/friends';
 /**
  * Generated class for the ProfilePage page.
  *
@@ -25,4 +26,8 @@ export class ProfilePage {
     let popover = this.popoverCtrl.create(SettingsPopoverPage, {}, {cssClass : 'SettingsPop'});
       popover.present();
     }
+  loadFriends(){
+    let popover = this.popoverCtrl.create(FriendsPage, {} , {cssClass: 'friendsPop'});
+    popover.present();
+  }
 }

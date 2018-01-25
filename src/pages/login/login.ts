@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController, AlertController, ToastController } from 'ionic-angular';
 import * as firebase  from 'firebase';
 import { TabsPage } from '../tabs/tabs';
 import { UserServiceProvider } from '../../providers/user-service/user-service';
@@ -26,7 +26,9 @@ export class LoginPage {
   public email: string;
   public password: string;
 
-  constructor(public usersService:UserServiceProvider, public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, public toastCtrl:ToastController) {
+  constructor(public usersService:UserServiceProvider, public navCtrl: NavController, 
+    public navParams: NavParams, public loadingCtrl: LoadingController,
+     public toastCtrl:ToastController,public alertCtrl:AlertController) {
   }
 
   ionViewDidLoad() {
@@ -63,4 +65,37 @@ this.usersService.loginUser(this.email,this.password).then(authData=>{
 signUpPage(){
   this.navCtrl.push(SignupPage);
 }
+forgotPassword(){
+    let alert = this.alertCtrl.create({
+      title: 'Recover Password',
+      inputs: [
+        {
+          name: 'email',
+          placeholder: 'Enter your email'
+        },
+       
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Submit',
+          handler: data => {
+            // if (User.isValid(data.username, data.password)) {
+            //   // logged in!
+            // } else {
+            //   // invalid login
+            //   return false;
+            // }
+          }
+        }
+      ]
+    });
+    alert.present();
+  }
 }
